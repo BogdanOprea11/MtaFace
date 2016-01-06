@@ -1,0 +1,15 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace FacebookATM.Models
+{
+    public class Timeline
+    {
+        public int TimelineID { get; set; }
+        public string ImageURL { get; set; }
+        public string FileURL { get; set; }
+        public string TextPost { get; set; }
+    }
+}
