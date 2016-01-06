@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace FacebookATM.Models
+{
+    public class MtaFaceRepository
+    {
+
+        MtaFaceDbContext _Context = new MtaFaceDbContext();
+
+        public List<User> GetUsers()
+        {
+            return (from e in _Context.Users
+                    select e).ToList();
+        }
+
+    }
+}
